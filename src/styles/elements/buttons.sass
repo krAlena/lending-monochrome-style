@@ -1,0 +1,16 @@
+@import "../variables"
+@import "../mixins"
+
+.button
+  color: $dark-text-color
+  background-color: $white-color
+  padding: 14px 20px
+  justify-content: center
+  @include flex()
+  align-items: center
+  white-space: nowrap
+  cursor: pointer
+  margin-right: 20px
+  &.black
+    color: $white-color
+    background-color: $dark-text-color

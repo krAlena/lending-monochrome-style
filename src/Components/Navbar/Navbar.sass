@@ -1,0 +1,151 @@
+@import '../../styles/_color-themes.scss'
+@import '../../styles/mixins.sass'
+
+.navigation-bar
+    margin-top: 32px
+    position: relative
+    width: 1512px
+    max-width: 100%
+    margin-left: auto
+    margin-right: auto
+    height: $header-height
+    overflow: hidden
+    @include flex()
+    flex-direction: row
+    @include themed()
+      background: getStyle($bg)
+
+.navigation-bar a
+    text-decoration: none
+  
+  
+// .navigation-bar .logo-part 
+//     top: -5px
+//     left: 13px
+//     display: inline-flex
+//     align-items: center
+//     position: absolute
+//     height: 80px
+  
+  
+// .navigation-bar .text-wrapper 
+//     position: relative
+//     width: 208px
+//     height: 41px
+//     font-family: var(--heading-h4-font-family)
+//     font-weight: var(--heading-h4-font-weight)
+//     color: var(--color-primary)
+//     font-size: var(--heading-h4-font-size)
+//     text-align: center
+//     letter-spacing: var(--heading-h4-letter-spacing)
+//     line-height: var(--heading-h4-line-height)
+//     white-space: nowrap
+//     font-style: var(--heading-h4-font-style)
+  
+.navigation-bar .logo
+    position: relative
+    width: 52px
+    height: 52px
+
+// .navigation-bar .login-btns 
+//     gap: 24px
+//     top: 20px
+//     right: 24px
+//     display: inline-flex
+//     align-items: center
+//     position: absolute
+  
+  
+// .navigation-bar .primary 
+//     background-color: var(--color-primary)
+//     display: inline-flex
+//     align-items: center
+//     gap: 10px
+//     padding: 8px
+//     position: relative
+//     flex: 0 0 auto
+//     border-radius: 7px
+//     overflow: hidden
+  
+  
+// .navigation-bar .primary-2 
+//     position: relative
+//     width: fit-content
+//     margin-top: -1px
+//     font-family: "Inter", Helvetica
+//     font-weight: 500
+//     color: var(--color-white)
+//     font-size: 14px
+//     letter-spacing: 0
+//     line-height: 22.4px
+//     white-space: nowrap
+  
+  
+// .navigation-bar .primary-wrapper 
+//     background-color: var(--color-secondary)
+//     display: inline-flex
+//     align-items: center
+//     gap: 10px
+//     padding: 8px
+//     position: relative
+//     flex: 0 0 auto
+//     border-radius: 7px
+//     overflow: hidden
+  
+  
+.navigation-bar .tabs 
+    position: relative
+    width: 595px
+    height: 100%
+    gap: 20px
+    @include flex()
+  
+// .navigation-bar .overlap-group 
+//     position: relative
+//     display: flex
+//     flex-direction: row
+//     height: 34px
+  
+  
+.navigation-bar .tab 
+    padding: 14px 20px
+    justify-content: center
+    @include flex()
+    position: relative
+  
+  
+// .navigation-bar .tab.active 
+//     border-bottom: 4px solid var( --color-primary)
+  
+  
+// .navigation-bar .section 
+//     top: -2px
+//     left: 22px
+//     color: var(--color-grey-3)
+//     margin-top: -2px
+//     font-family: "Inter", Helvetica
+//     font-weight: 500
+//     font-size: 16px
+//     letter-spacing: 0
+//     line-height: 22.4px
+//     white-space: nowrap
+  
+
+// .navigation-bar .tab.active .section 
+//     color: var(--color-primary)
+  
+  
+// .navigation-bar .tab-2 
+//     width: 125px
+//     top: 1px
+//     left: 158px
+//     position: absolute
+//     height: 33px
+  
+  
+// .navigation-bar .img 
+//     width: 125px
+//     top: 31px
+//     position: absolute
+//     height: 4px
+//     left: 0

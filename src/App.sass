@@ -1,0 +1,14 @@
+@import "styles/variables"
+@import "styles/mixins"
+@import "styles/_color-themes"
+@import "styles/default"
+@import "styles/typography"
+@import "styles/elements/buttons"
+
+.app
+  height: 100%
+  width: 100%
+  &.theme--light
+    background: $bg-color-light
+  &.theme--dark
+    background: $bg-color-night
