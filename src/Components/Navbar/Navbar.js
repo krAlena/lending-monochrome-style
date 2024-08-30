@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import './Navbar.sass';
+import React, {useState, useEffect} from "react";
+import "./Navbar.sass";
 import { Link } from "react-router-dom";
-import { FAQ, HOME_PAGE, HOW_IT_WORKS, PRICING } from '../../Constants/routes';
+import { FAQ, HOME_PAGE, HOW_IT_WORKS, PRICING } from "../../Constants/routes";
 
 const Navbar = () => {
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
                 <div className="right-buttons flex-row">
                     <div className="button white">Login</div>
-                    <div className="button black">Sign Up</div>
+                    <div className="button black without-margin">Sign Up</div>
                 </div>
             </div>
         </div>
