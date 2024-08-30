@@ -27,10 +27,16 @@ input
   flex-direction: row
 .flex-col
   @include flex()
-  flex-direction: col
+  flex-direction: column
 .space-between
   @include flex()
   justify-content: space-between !important
 
 .half-width
     width: 50%
+
+.description
+  &.white
+    @include themed()
+        background: getStyle($bg-inverted)
+        color: getStyle($text-color-inverted)

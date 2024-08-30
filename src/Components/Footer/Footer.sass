@@ -1,0 +1,29 @@
+@import '../../styles/_color-themes.scss'
+@import '../../styles/mixins.sass'
+
+.footer
+    padding: 32px
+    height: $footer-height
+    position: absolute
+    bottom: 0px
+    justify-content: center
+    @include themed()
+      background: getStyle($bg-inverted)
+      color: getStyle($text-color-inverted)
+    &-content
+        width: 1512px
+        .info.big
+            height: 120px
+            width: 444px
+            margin-bottom: 32px
+            margin-top: 40px
+            // font-family: 
+            font-style: normal
+            font-weight: 400
+            font-size: 52px
+            line-height: 60px
+            /* or 115% */
+            letter-spacing: -4px
+            @include themed()
+                color: getStyle($text-color-inverted)
+

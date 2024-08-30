@@ -3,7 +3,10 @@
 $bg: 'bg';
 $icon-color: 'icon-color';
 $card-bg: 'card-bg';
-$text: 'text';
+$text-color: 'text-color';
+$text-color-inverted: 'text-color-inverted';
+$bg-inverted: 'bg-inverted';
+
 $text-secondary: 'text-secondary';
 $link: 'link';
 $hover: 'hover';
@@ -20,7 +23,9 @@ $bg-articles: 'bg-articles';
 $themes: (
   light: (
           bg: $bg-color-light,
-          // text: $dark-gray-icons,
+          bg-inverted: $dark-primary-color,
+          text-color: $dark-primary-color,
+          text-color-inverted: $white-color,
           // icon-color: $dark-gray-icons,
           // line-color: $lines-color,
           // bord-color: $border-color,
@@ -29,8 +34,10 @@ $themes: (
           // bg-articles: $bg-color-light-additional
   ),
   dark: (
-          bg: $bg-color-night,             
-          // text: white,
+          bg: $bg-color-night,
+          bg-inverted: $bg-color-light,        
+          text-color: $white-color,
+          text-color-inverted: $dark-primary-color,
           // icon-color: white,
           // line-color: $lines-color-night,
           // bord-color: $border-color,
