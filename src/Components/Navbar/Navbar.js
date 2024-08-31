@@ -19,17 +19,17 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="tab">
-                        <Link to={HOW_IT_WORKS_ID}>
+                        <Link to={HOW_IT_WORKS_ID} smooth={true} duration={500}>
                             <div className="section">How it works</div>
                         </Link>
                     </div>
                     <div className="tab">
-                        <Link to={PRICING_ID}>
+                        <Link to={PRICING_ID} smooth={true} duration={500}>
                             <div className="section">Pricing</div>
                         </Link>
                     </div>
                     <div className="tab">
-                        <Link to={FAQ_ID}>
+                        <Link to={FAQ_ID} smooth={true} duration={500}>
                             <div className="section">FAQs</div>
                         </Link>
                     </div>
