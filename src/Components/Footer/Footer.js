@@ -20,7 +20,7 @@ const Footer = () => {
                             </div>
                             <div className="input-with-button flex-row">
                                 <input className="subscribe-input" placeholder="Enter your email"/>
-                                <div className="button black btn-subscribe without-margin">Subscribe</div>
+                                <div className="button black btn-subscribe without-margin with-contrast-border">Subscribe</div>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ const CTA = () => {
                     — on a single platform. Powerful, affordable & easy.</div>
                     <div className="input-with-button flex-row">
                         <input className="get-started-input" placeholder="Enter your email"/>
-                        <div className="button black btn-start without-margin">Subscribe</div>
+                        <div className="button black btn-start without-margin">Get started</div>
                     </div>
                     <div className="icons-panel flex-row">
                         <img className="logo" src="/img/cards/visa.svg" alt="logo visa"/>

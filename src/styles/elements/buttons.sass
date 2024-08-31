@@ -14,5 +14,9 @@
   &.black
     color: $white-color
     background-color: $dark-primary-color
+  &.with-contrast-border
+    height: 50px
+    @include themed()
+      border: 1px solid getStyle($border-color-inverted)
   &.without-margin
     margin: 0px
