@@ -4,7 +4,7 @@ import './App.sass';
 import Footer from './Components/Footer/Footer';
 import CTA from './Components/CTA/CTA';
 import AboutUs from './Components/AboutUs/AboutUs';
-import { ABOUT_US, HOME_PAGE } from './Constants/routes';
+import { ABOUT_US, CTA_PAGE } from './Constants/routes';
 // Import components for routing from react-router-dom library
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -21,7 +21,7 @@ function App() {
         <Navbar/>
         {/* <BrowserRouter>
           <Routes>
-            <Route path={HOME_PAGE} element={<CTA/>}/>
+            <Route path={CTA_PAGE} element={<CTA/>}/>
             <Route path={ABOUT_US} element={<AboutUs/>}/>
           </Routes>
         </BrowserRouter> */}

@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from "react";
+import {Element} from "react-scroll";
 import "./AboutUs.sass";
+import { ABOUT_US_ID } from "../../Constants/routes";
 
 const AboutUs = () => {
 
 
     return (
-        <div id="aboutUs" className="page about-us">
+    <Element name={ABOUT_US_ID}>
+        <section className="page about-us">
             <div className="page-content about-us-content flex-row space-between">
                 
                 <div className="illustration-part">
@@ -29,7 +32,8 @@ const AboutUs = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+    </Element>
     )
 };
 

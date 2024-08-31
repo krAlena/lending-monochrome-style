@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from "react";
+import {Element} from "react-scroll";
 import "./CTA.sass";
+import { CTA_ID } from "../../Constants/routes";
 
 const CTA = () => {
 
-
     return (
+    <Element name={CTA_ID}>
         <div id="CTA" className="page cta">
             <div className="page-content cta-content flex-row space-between">
                 <div className="flex-col main-info">
@@ -26,6 +28,7 @@ const CTA = () => {
                 </div>
             </div>
         </div>
+    </Element>
     );
 };
 

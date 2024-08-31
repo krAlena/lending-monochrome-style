@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./Navbar.sass";
-import { Link } from "react-router-dom";
-import { ABOUT_US, FAQ, HOME_PAGE, HOW_IT_WORKS, PRICING } from "../../Constants/routes";
+import { Link } from "react-scroll";
+import { ABOUT_US, ABOUT_US_ID, FAQ, FAQ_ID, HOME_PAGE, HOW_IT_WORKS, HOW_IT_WORKS_ID, PRICING, PRICING_ID } from "../../Constants/routes";
 
 const Navbar = () => {
 
@@ -14,24 +14,24 @@ const Navbar = () => {
                         <img className="logo" src="/img/logo.svg" alt="main logo"/>
                     </div>
                     <div className="tab active">
-                        {/* <Link to="aboutUs" smoots={true} duration={500}> */}
+                        <Link to={ABOUT_US_ID} smooth={true} duration={500}>
                             <div className="section">About Us</div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                     <div className="tab">
-                        {/* <Link to={HOW_IT_WORKS}> */}
+                        <Link to={HOW_IT_WORKS_ID}>
                             <div className="section">How it works</div>
-                        {/* </Link>  */}
+                        </Link>
                     </div>
                     <div className="tab">
-                        {/* <Link to={PRICING}> */}
+                        <Link to={PRICING_ID}>
                             <div className="section">Pricing</div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                     <div className="tab">
-                        {/* <Link to={FAQ}> */}
+                        <Link to={FAQ_ID}>
                             <div className="section">FAQs</div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                 </div>
                 <div className="right-buttons flex-row">

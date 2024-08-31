@@ -1,5 +1,10 @@
-export const HOME_PAGE = '/';
+export const CTA_PAGE = '/';
+export const CTA_ID = 'CTA';
 export const ABOUT_US = '/about-us';
+export const ABOUT_US_ID = 'aboutUs';
 export const HOW_IT_WORKS = '/how-it-works';
+export const HOW_IT_WORKS_ID = 'howItWorks';
 export const PRICING = '/pricing';
+export const PRICING_ID = 'pricing';
 export const FAQ = '/faqs'
+export const FAQ_ID = 'faqs'
