@@ -5,7 +5,6 @@ import { ABOUT_US, ABOUT_US_ID, FAQ, FAQ_ID, HOME_PAGE, HOW_IT_WORKS, HOW_IT_WOR
 
 const Navbar = () => {
 
-
     return (
         <div className="navigation-bar">
             <div className="navigation-bar-content full-width flex-row space-between">

@@ -41,8 +41,11 @@ input
       width: $main-content-width
       margin: auto
 .uppercase
-  text-transform: uppercase 
+  text-transform: uppercase
 .description
+  &.medium
+    font-size: 20px
+    line-height: 28px
   &.white
     @include themed()
         background: getStyle($bg-inverted)

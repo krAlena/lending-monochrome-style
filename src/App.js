@@ -8,6 +8,7 @@ import { ABOUT_US, CTA_PAGE } from './Constants/routes';
 // Import components for routing from react-router-dom library
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HowItWorks from './Components/HowItWorks/HowItWorks';
+import Pricing from './Components/Pricing/Pricing';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -32,6 +33,7 @@ function App() {
         <CTA/>
         <AboutUs/>
         <HowItWorks/>
+        <Pricing/>
         <Footer/>
     </div>
   );

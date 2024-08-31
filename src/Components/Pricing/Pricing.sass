@@ -1,0 +1,78 @@
+@import '../../styles/_color-themes.scss'
+@import '../../styles/mixins.sass'
+
+.pricing-content
+    .main-info
+        width: 743px
+        align-items: end
+        h2
+            margin-top: 40px
+            margin-bottom: 20px
+    .price-plans
+        margin-top: 60px
+        gap: 102px
+        justify-content: center
+        .price-plan-item
+            width: 436px
+            height: 644px
+            padding: 40px
+            padding-top: 52px
+            @include themed()
+                border: 1px solid getStyle($border-color)
+            &.light
+                border: none
+                background: $white-color
+            &.dark
+                border: none
+                background: $dark-primary-color
+                color: $white-color
+                div
+                    color: $white-color
+                .button
+                    color: $dark-primary-color
+
+            .price-block
+                height: 77px
+                margin-bottom: 20px
+                .dollar-sign
+                    height: 28px
+                    font-style: normal
+                    font-weight: 800
+                    font-size: 20px
+                    line-height: 28px
+                .price
+                    height: 77px
+                    font-style: normal
+                    font-weight: 800
+                    font-size: 80px
+                    line-height: 59px
+                    letter-spacing: -2px
+                .period
+                    height: 28px
+                    font-style: normal
+                    font-weight: 800
+                    font-size: 20px
+                    line-height: 28px
+                    align-self: flex-end
+                    margin-left: 12px
+            ul.plan-features-list
+                margin-top: 60px
+                // padding-left: 29px
+                gap: 24px
+                // list-style: square
+                li
+                    list-style: none
+                    @include flex()
+                    align-items: center
+                    line-height: 28px
+                    &:before
+                        content: "·"
+                        font-size: 85px
+                        line-height: 28px
+                        @include flex()
+                        content: "·"
+                        font-size: 85px
+                        line-height: 26px
+                        align-items: center
+                        height: 28px
+                        margin-right: 14px
