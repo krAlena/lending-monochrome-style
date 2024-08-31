@@ -1,0 +1,31 @@
+@import '../../styles/_color-themes.scss'
+@import '../../styles/mixins.sass'
+
+.about-us-content
+    .main-info
+        width: 750px
+        h2
+            margin-top: 40px 
+            margin-bottom: 20px
+        ul.list
+            margin-top: 60px
+            // padding-left: 29px
+            gap: 24px
+            // list-style: square 
+            li
+                list-style: none
+                @include flex()
+                align-items: center
+            li
+                list-style: none
+                &:before
+                    content: "·"
+                    font-size: 85px
+                    line-height: 28px
+                    @include flex()
+                    content: "·"
+                    font-size: 85px
+                    line-height: 26px
+                    align-items: center
+                    height: 28px
+                    margin-right: 14px

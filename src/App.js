@@ -3,6 +3,10 @@ import Navbar from './Components/Navbar/Navbar';
 import './App.sass';
 import Footer from './Components/Footer/Footer';
 import CTA from './Components/CTA/CTA';
+import AboutUs from './Components/AboutUs/AboutUs';
+import { ABOUT_US, HOME_PAGE } from './Constants/routes';
+// Import components for routing from react-router-dom library
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -13,11 +17,19 @@ function App() {
 
   return (
     <div className={`app theme--${theme}`}>
-
+        {/* Set up BrowserRouter for routing */}
+        <Navbar/>
+        {/* <BrowserRouter>
+          <Routes>
+            <Route path={HOME_PAGE} element={<CTA/>}/>
+            <Route path={ABOUT_US} element={<AboutUs/>}/>
+          </Routes>
+        </BrowserRouter> */}
         {/* <button onClick={() => handleThemeChange('light')}>Theme 1 (light)</button>
         <button onClick={() => handleThemeChange('dark')}>Theme 2 (dark)</button> */}
-        <Navbar/>
+
         <CTA/>
+        <AboutUs/>
         <Footer/>
     </div>
   );

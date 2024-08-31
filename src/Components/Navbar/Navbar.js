@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./Navbar.sass";
 import { Link } from "react-router-dom";
-import { FAQ, HOME_PAGE, HOW_IT_WORKS, PRICING } from "../../Constants/routes";
+import { ABOUT_US, FAQ, HOME_PAGE, HOW_IT_WORKS, PRICING } from "../../Constants/routes";
 
 const Navbar = () => {
 
@@ -14,14 +14,14 @@ const Navbar = () => {
                         <img className="logo" src="/img/logo.svg" alt="main logo"/>
                     </div>
                     <div className="tab active">
-                        {/* <Link to={HOME_PAGE}> */}
+                        {/* <Link to="aboutUs" smoots={true} duration={500}> */}
                             <div className="section">About Us</div>
                         {/* </Link> */}
                     </div>
                     <div className="tab">
                         {/* <Link to={HOW_IT_WORKS}> */}
                             <div className="section">How it works</div>
-                        {/* </Link> */}
+                        {/* </Link>  */}
                     </div>
                     <div className="tab">
                         {/* <Link to={PRICING}> */}

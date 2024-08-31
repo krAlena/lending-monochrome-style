@@ -5,7 +5,7 @@ const CTA = () => {
 
 
     return (
-        <div className="page cta">
+        <div id="CTA" className="page cta">
             <div className="page-content cta-content flex-row space-between">
                 <div className="flex-col main-info">
                     <h1>Always Track & Analyze Your Business Statistics To Succeed.</h1>
