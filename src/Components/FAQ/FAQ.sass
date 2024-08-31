@@ -1,0 +1,27 @@
+@import '../../styles/_color-themes.scss'
+@import '../../styles/mixins.sass'
+
+.faq-content
+    .main-info
+        width: 840px
+        .top-block
+            margin-bottom: 40px
+            width: 554px
+            h2
+                margin-top: 40px
+                margin-bottom: 20px
+        .questions-list
+            .question-block
+                padding: 20px 0px
+                align-items: flex-start
+                @include themed()
+                    border-bottom: 1px solid getStyle($border-color)
+                .question-body
+                    .question-title
+                        height: 28px
+                        font-style: normal
+                        font-weight: 800
+                        font-size: 20px
+                        line-height: 28px
+                    .question-answer
+                        margin-top: 20px
