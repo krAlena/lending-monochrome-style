@@ -4,9 +4,16 @@
 .how-it-works-content
     .main-info
         width: 659px
+        @media (min-width: $screen-medium-min)
+            width: 627px
+            min-width: 627px
+        @media (min-width: $screen-large-min)
+            margin-left: -10px
         h2
             margin-top: 40px
             margin-bottom: 60px
+            @media (min-width: $screen-medium-min)
+                width: 400px
         .tools-list
             width: 627px
             gap: 48px
@@ -17,3 +24,9 @@
                     width: 499px
                     h3
                         margin-bottom: 16px
+    .illustration-part
+        img
+            @media (min-width: $screen-medium-min)
+                height: 600px
+                width: 420px
+                margin-left: -11px

@@ -11,7 +11,11 @@
       background: getStyle($bg-inverted)
       color: getStyle($text-color-inverted)
     &-content
-        width: $main-content-width
+        width: $main-content-width-xl
+        @media (max-width: $screen-medium-max)
+            width: $main-content-width-m
+        @media (max-width: $screen-large-max)
+            width: $main-content-width-l
         .main-block
             padding-bottom: 17px
             .logo-part

@@ -39,9 +39,17 @@ span.symbol-font
   font-size: 0.92em
 .page
     margin-bottom: 200px
+    @media (min-width: $screen-medium-min)
+      margin-bottom: 120px
     &-content
-      width: $main-content-width
+      width: $main-content-width-xl //todo S size repl
       margin: auto
+      @media (min-width: $screen-medium-min)
+        width: $main-content-width-m
+      @media (min-width: $screen-large-min)
+        width: $main-content-width-l
+      @media (min-width: $screen-extra-large-min)
+        width: $main-content-width-xl
       .bordered-title
         height: 38px
         padding: 6px 20px

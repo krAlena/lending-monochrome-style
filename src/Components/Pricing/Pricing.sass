@@ -2,17 +2,29 @@
 @import '../../styles/mixins.sass'
 
 .pricing-content
-    .main-info
-        width: 743px
-        align-items: end
-        text-align: end
-        h2
-            margin-top: 40px
-            margin-bottom: 20px
+    .top-info
+        .illustration-part
+            img
+                @media (min-width: $screen-medium-min)
+                    height: 404px
+                    width: 380px
+        .main-info
+            width: 743px
+            align-items: end
+            text-align: end
+            h2
+                margin-top: 40px
+                margin-bottom: 20px
+                @media (min-width: $screen-medium-min)
+                    width: 396px
     .price-plans
         margin-top: 60px
         gap: 102px
         justify-content: center
+        @media (min-width: $screen-medium-min)
+            gap: 24px
+        @media (min-width: $screen-large-min)
+            gap: 40px
         .price-plan-item
             width: 436px
             height: 644px
@@ -20,6 +32,8 @@
             padding-top: 52px
             @include themed()
                 border: 1px solid getStyle($border-color)
+            @media (min-width: $screen-medium-min)
+                padding-left: 20px
             &.light
                 border: none
                 background: $white-color

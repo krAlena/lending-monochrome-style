@@ -4,8 +4,14 @@
 .cta-content
     margin-top: 120px
     .main-info
-        width: 712px
-        padding-top: 40px
+        width: 712px //todo S size repl
+        @media (min-width: $screen-medium-min)
+            width: 619px
+            min-width: 619px
+        @media (min-width: $screen-large-min)
+            width: 712px
+        @media (min-width: $screen-extra-large-min)
+            padding-top: 40px
         h1
             margin-bottom: 20px
         .input-with-button
@@ -13,3 +19,8 @@
             margin-bottom: 80px
         .icons-panel
             gap: 28px
+    .illustration-part
+        @media (min-width: $screen-medium-min)
+            margin-left: -106px
+        @media (min-width: $screen-large-min)
+            margin-right: -50px
