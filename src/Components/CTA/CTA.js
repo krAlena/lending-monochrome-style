@@ -10,9 +10,9 @@ const CTA = () => {
             <section className="page cta">
                 <div className="page-content cta-content flex-row space-between">
                     <div className="flex-col main-info">
-                        <h1>Always Track & Analyze Your Business Statistics To Succeed.</h1>
-                        <div className="description">A better way to manage your sales, team, clients & marketing
-                        — on a single platform. Powerful, affordable & easy.</div>
+                        <h1>Always Track <span className="symbol-font">&</span> Analyze Your Business Statistics To Succeed.</h1>
+                        <div className="description">A better way to manage your sales, team, clients <span className="symbol-font">&</span> marketing
+                        — on a single platform. Powerful, affordable <span className="symbol-font">&</span> easy.</div>
                         <div className="input-with-button flex-row">
                             <input className="get-started-input" placeholder="Enter your email"/>
                             <div className="button black btn-start without-margin">Get started</div>
