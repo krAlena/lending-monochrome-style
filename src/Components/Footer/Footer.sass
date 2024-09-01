@@ -12,12 +12,14 @@
       color: getStyle($text-color-inverted)
     &-content
         width: $main-content-width-xl
-        @media (max-width: $screen-medium-max)
+        @media (min-width: $screen-medium-min)
             width: $main-content-width-m
-        @media (max-width: $screen-large-max)
+        @media (min-width: $screen-large-min)
             width: $main-content-width-l
         .main-block
             padding-bottom: 17px
+            @media (min-width: $screen-medium-min)
+                width: 484px
             .logo-part
                 height: 52px
             .info.big
@@ -40,8 +42,16 @@
                     margin-top: 1px
         .secondary-block
             width: 696px
+            @media (min-width: $screen-medium-min)
+                width: 402px
+                position: relative
             .info-col
                 gap: 24px
+                &.email-block
+                    @media (min-width: $screen-medium-min)
+                        position: absolute
+                        right: 36px
+                        bottom: 132px
             .email-title
                 font-weight: 700
                 font-size: 20px

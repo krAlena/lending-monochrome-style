@@ -4,7 +4,9 @@
 .faq-content
     .main-info
         width: 840px
-        @media (max-width: $screen-large-max)
+        @media (min-width: $screen-medium-min)
+            width: 700px
+        @media (min-width: $screen-large-min)
             margin-left: -10px
         .top-block
             margin-bottom: 40px
@@ -15,3 +17,10 @@
     .illustration-part
         @media (max-width: $screen-large-max)
             margin-right: -50px
+        img
+            @media (min-width: $screen-medium-min)
+                height: 403px
+                width: 390px
+                position: absolute
+                left: 640px
+                pointer-events: none

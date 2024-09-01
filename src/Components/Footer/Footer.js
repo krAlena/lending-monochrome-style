@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="secondary-block flex-col space-between">
                     <div className="info-cols-parent space-between flex-row">
-                        <div className="info-col flex-col">
+                        <div className="info-col email-block flex-col">
                             <div className="description white email-title">Email</div>
                             <div className="description white">info@the18.design</div>
                         </div>
@@ -46,7 +46,6 @@ const Footer = () => {
                             <div className="description white">Customer support</div>
                             <div className="description white">Help Center Articles</div>
                             <div className="description white">Outbound Messages</div>
-                            
                         </div>
                     </div>
                     <div className="icons-panel flex-row">
