@@ -11,7 +11,7 @@ const HowItWorks = () => {
                 <div className="page-content how-it-works-content flex-row space-between">
                     <div className="flex-col main-info">
                         <div className="flex-row">
-                            <div className="button transparent with-border uppercase">How it works</div>
+                            <div className="bordered-title uppercase">How it works</div>
                         </div>
                         <h2>Building the best space for collaboration.</h2>
                         <div className="tools-list flex-col">

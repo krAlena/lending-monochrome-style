@@ -14,7 +14,7 @@ const Pricing = () => {
                         </div>
                         <div className="flex-col main-info">
                             <div className="flex-row">
-                                <div className="button transparent with-border uppercase">Pricing</div>
+                                <div className="bordered-title uppercase">Pricing</div>
                             </div>
                             <h2>Select a membership level the right price for you.</h2>
                             <div className="description">

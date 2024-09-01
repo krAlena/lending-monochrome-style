@@ -15,7 +15,7 @@ const AboutUs = () => {
                 </div>
                 <div className="flex-col main-info">
                     <div className="flex-row">
-                        <div className="button transparent with-border uppercase">About us</div>
+                        <div className="bordered-title uppercase">About us</div>
                     </div>
                     <h2>Faster, friendlier feedback loops make life easier.</h2>
                     <div className="description">

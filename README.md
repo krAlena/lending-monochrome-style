@@ -22,5 +22,4 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
-Font 'Neue Machina' was change to similar free Google font 'Space Grotesk'
-https://www.typewolf.com/neue-machina
+Font ['Neue Machina'](https://www.typewolf.com/neue-machina) was change to similar free Google font ['Space Grotesk'](https://fonts.google.com/specimen/Space+Grotesk)

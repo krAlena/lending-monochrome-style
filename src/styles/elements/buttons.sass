@@ -2,6 +2,7 @@
 @import "../mixins"
 
 .button
+  height: 52px
   color: $dark-primary-color
   background-color: $white-color
   padding: 14px 20px
@@ -11,9 +12,14 @@
   white-space: nowrap
   cursor: pointer
   margin-right: 20px
+  transition: all .5s ease
+  &:hover
+    box-shadow: inset 0 0 0 2px $dark-primary-color
   &.black
     color: $white-color
     background-color: $dark-primary-color
+    &:hover
+      box-shadow: inset 0 0 0 2px $white-color
   &.transparent
     background: transparent
   &.with-border
@@ -21,7 +27,7 @@
     @include themed()
       border: 1px solid getStyle($border-color)
   &.with-border-inverted
-    height: 50px
+    height: 52px
     @include themed()
       border: 1px solid getStyle($border-color-inverted)
   &.without-margin

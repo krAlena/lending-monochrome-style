@@ -12,7 +12,7 @@ const FAQ = () => {
                     <div className="flex-col main-info">
                         <div className="top-block">
                             <div className="flex-row">
-                                <div className="button transparent with-border uppercase">FAQS</div>
+                                <div className="bordered-title uppercase">FAQS</div>
                             </div>
                             <h2>Common Questions.</h2>
                             <div className="description">

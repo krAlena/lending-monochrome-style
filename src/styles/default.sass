@@ -40,6 +40,16 @@ input
     &-content
       width: $main-content-width
       margin: auto
+      .bordered-title
+        height: 38px
+        padding: 6px 20px
+        font-style: normal
+        font-weight: 800
+        font-size: 14px
+        line-height: 26px
+        text-align: center
+        @include themed()
+          border: 1px solid getStyle($border-color)
 .uppercase
   text-transform: uppercase
 .description
