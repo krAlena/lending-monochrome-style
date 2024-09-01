@@ -19,6 +19,8 @@ const Pricing = () => {
                             <h2>Select a membership level the right price for you.</h2>
                             <div className="description">
                                 Prices listed in USD. Taxes may apply.
+                            </div>
+                            <div className="description">
                                 By using program you agree to our terms and policies.
                             </div>
                         </div>
