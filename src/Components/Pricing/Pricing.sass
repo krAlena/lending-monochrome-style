@@ -34,6 +34,9 @@
                 border: 1px solid getStyle($border-color)
             @media (min-width: $screen-medium-min)
                 padding-left: 20px
+                width: 304px
+                height: 640px
+                padding-right: 15px
             &.light
                 border: none
                 background: $white-color
@@ -41,11 +44,17 @@
                 border: none
                 background: $dark-primary-color
                 color: $white-color
+                .description
+                    @media (min-width: $screen-medium-min)
+                        width: 140px
                 div
                     color: $white-color
                 .button
                     color: $dark-primary-color
-
+            .button
+                @media (min-width: $screen-medium-min)
+                    width: 224px
+                    margin-left: 20px
             .price-block
                 height: 77px
                 margin-bottom: 20px

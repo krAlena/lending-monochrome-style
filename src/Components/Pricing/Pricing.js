@@ -2,9 +2,13 @@ import React from "react";
 import {Element} from "react-scroll";
 import "./Pricing.sass";
 import { PRICING_ID } from "../../Constants/routes";
+import useIsSmallScreen from "../../Helpers/useIsSmallScreen";
+
 
 const Pricing = () => {
+    const isSmallScreen = useIsSmallScreen();
     return (
+
         <Element name={PRICING_ID}>
             <section className="page pricing">
                 <div className="page-content pricing-content flex-col">
@@ -31,13 +35,23 @@ const Pricing = () => {
                                 <div className="price-block flex-row">
                                     <div className="dollar-sign">$</div>
                                     <div className="price">49</div>
-                                    <div className="period">per month</div>
+                                    <div className="period">{!isSmallScreen ? "per month" : "per/mo"}</div>
                                 </div>
                                 <div className="description medium">A pay-once license, just for you</div>
                                 <ul className="plan-features-list flex-col">
-                                    <li>The Mac app — yours to keep</li>
-                                    <li>Beautiful White_level</li>
-                                    <li>One year of saving to Cloud</li>
+                                    {
+                                        !isSmallScreen
+                                            ?   <>
+                                                    <li>The Mac app — yours to keep</li>
+                                                    <li>Beautiful White_level</li>
+                                                    <li>One year of saving to Cloud</li>
+                                                </>
+                                            :   <>
+                                                    <li>The Mac app</li>
+                                                    <li>Beautiful White_level</li>
+                                                    <li>One year of saving</li>
+                                                </>
+                                    }
                                 </ul>
                             </div>
                             <div className="button black without-margin">Join</div>
@@ -47,15 +61,27 @@ const Pricing = () => {
                                 <div className="price-block flex-row">
                                     <div className="dollar-sign">$</div>
                                     <div className="price">99</div>
-                                    <div className="period">per month</div>
+                                    <div className="period">{!isSmallScreen ? "per month" : "per/mo"}</div>
                                 </div>
                                 <div className="description medium">Pro account, just for you</div>
                                 <ul className="plan-features-list flex-col">
-                                    <li>The Mac app — yours to keep</li>
-                                    <li>One year of Mac app updates</li>
-                                    <li>One year of saving to Cloud</li>
-                                    <li>A personal Cloud workspace</li>
-                                    <li>All tools, just for you</li>
+                                    {
+                                        !isSmallScreen
+                                            ?   <>
+                                                    <li>The Mac app — yours to keep</li>
+                                                    <li>One year of Mac app updates</li>
+                                                    <li>One year of saving to Cloud</li>
+                                                    <li>A personal Cloud workspace</li>
+                                                    <li>All tools, just for you</li>
+                                                </>
+                                            :   <>
+                                                    <li>The Mac app</li>
+                                                    <li>One year of Mac app</li>
+                                                    <li>One year of saving</li>
+                                                    <li>A personal Cloud</li>
+                                                    <li>All tools, just for you</li>
+                                                </>
+                                    }
                                 </ul>
                             </div>
                             <div className="button without-margin">Join</div>
@@ -65,15 +91,35 @@ const Pricing = () => {
                                 <div className="price-block flex-row">
                                     <div className="dollar-sign">$</div>
                                     <div className="price">299</div>
-                                    <div className="period">per month</div>
+                                    <div className="period">{!isSmallScreen ? "per month" : "per/mo"}</div>
                                 </div>
-                                <div className="description medium">A subscription for the whole team</div>
+                                {
+                                    !isSmallScreen
+                                        ?   <div className="description medium">A subscription for the whole team</div>
+                                        :   <>
+                                                <div className="description medium">A subscription</div>
+                                                <div className="description medium">for the whole team</div>
+                                            </>
+                                }
                                 <ul className="plan-features-list flex-col">
-                                    <li>Access to the Mac app for all</li>
-                                    <li>A shared Cloud workspace</li>
-                                    <li>Free Cloud access for unlim</li>
-                                    <li>Easy team management</li>
-                                    <li>No license key required</li>
+
+                                    {
+                                        !isSmallScreen
+                                            ?   <>
+                                                    <li>Access to the Mac app for all</li>
+                                                    <li>A shared Cloud workspace</li>
+                                                    <li>Free Cloud access for unlim</li>
+                                                    <li>Easy team management</li>
+                                                    <li>No license key required</li>
+                                                </>
+                                            :   <>
+                                                    <li>Access to the Mac app</li>
+                                                    <li>Cloud workspace</li>
+                                                    <li>Free Cloud access</li>
+                                                    <li>Easy team management</li>
+                                                    <li>No license key required</li>
+                                                </>
+                                    }
                                 </ul>
                             </div>
                             <div className="button black without-margin">Join</div>
