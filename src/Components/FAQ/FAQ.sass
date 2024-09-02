@@ -8,6 +8,7 @@
             width: 700px
         @media (min-width: $screen-large-min)
             margin-left: -10px
+            width: 840px
         .top-block
             margin-bottom: 40px
             width: 554px
@@ -15,12 +16,22 @@
                 margin-top: 40px
                 margin-bottom: 20px
     .illustration-part
-        @media (max-width: $screen-large-max)
+        @media (min-width: $screen-large-min)
             margin-right: -50px
+        @media (min-width: $screen-extra-large-min)
+            margin-right: 0px
         img
             @media (min-width: $screen-medium-min)
                 height: 403px
                 width: 390px
                 position: absolute
-                left: 640px
+                // left: 640px
+                right: -6px
                 pointer-events: none
+            @media (min-width: $screen-large-min)
+                height: 496px
+                width: 480px
+                position: static
+            @media (min-width: $screen-extra-large-min)
+                height: 620px
+                width: 600px
