@@ -13,6 +13,8 @@
     flex-direction: row
     @include themed()
       background: getStyle($bg)
+    @media ( max-width: $screen-small-max)
+        width: $main-content-width-s
     @media (min-width: $screen-medium-min)
         width: $main-content-width-m
     @media (min-width: $screen-large-min)

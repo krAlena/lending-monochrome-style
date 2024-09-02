@@ -38,13 +38,21 @@ li
 span.symbol-font
   font-family: $sora-font !important
   font-size: 0.92em
+.main-info
+  max-width: 100%
 .page
     margin-bottom: 200px
+    @media ( max-width: $screen-small-max)
+      margin-bottom: 80px
     @media (min-width: $screen-medium-min)
       margin-bottom: 120px
     &-content
-      width: $main-content-width-xl //todo S size repl
+      width: $main-content-width-l
       margin: auto
+      max-width: 100%
+      flex-wrap: wrap
+      @media ( max-width: $screen-small-max)
+        width: $main-content-width-s
       @media (min-width: $screen-medium-min)
         width: $main-content-width-m
       @media (min-width: $screen-large-min)

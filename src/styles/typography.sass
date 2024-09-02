@@ -31,8 +31,11 @@ h1, h1 span, h1 *
     font-weight: 400
     font-size: 70px
     color: $dark-primary-color
-    line-height: 80px /* or 114% */
+    line-height: 80px
     letter-spacing: -2px
+    @media ( max-width: $screen-small-max)
+        font-size: 52px
+        line-height: 60px
 h2, h2 span, h2 *
     font-family: $machina-font
     font-style: normal
