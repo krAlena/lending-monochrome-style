@@ -10,7 +10,7 @@ const AboutUs = () => {
     <Element name={ABOUT_US_ID}>
         <section className="page about-us">
             <div className="page-content about-us-content flex-row space-between">
-                <div className="illustration-part">
+                <div className="illustration-part mob-hidden">
                     <img className="logo" src="/img/illustration/illustration_about.svg" alt="illustration About Us"/>
                 </div>
                 <div className="flex-col main-info">
@@ -22,6 +22,9 @@ const AboutUs = () => {
                         Add a Viewer to your team so they can see everything you share, or invite
                         people to individual documents. It’s up to you. Stakeholders can check
                         out designs in their web browser, test prototypes and leave feedback for free.
+                    </div>
+                    <div className="illustration-part-mob mob-visible">
+                        <img className="logo" src="/img/illustration/illustration_about.svg" alt="illustration About Us"/>
                     </div>
                     <ul class="list flex-col">
                         <li>Shared Cloud Libraries, for a single source of truth</li>

@@ -16,11 +16,19 @@
         .description
             @media (min-width: $screen-medium-min)
                 width: 529px
+        .illustration-part-mob
+            img
+                height: 320px
+                width: 370px
+                margin-left: -26px
+                margin-top: 40px
         ul.list
             margin-top: 60px
             // padding-left: 29px
             gap: 24px
             // list-style: square
+            @media (max-width: $screen-small-max)
+                margin-top: 40px
             li
                 list-style: none
                 @include flex()

@@ -71,6 +71,13 @@ span.symbol-font
           border: 1px solid getStyle($border-color)
 .uppercase
   text-transform: uppercase
+.mob-visible
+  display: none !important
+  @media (max-width: $screen-small-max)
+    @include flex_important()
+.mob-hidden
+  @media (max-width: $screen-small-max)
+    display: none
 .description
   &.medium
     font-size: 20px
