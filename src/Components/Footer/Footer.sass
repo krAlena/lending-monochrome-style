@@ -11,11 +11,12 @@
       background: getStyle($bg-inverted)
       color: getStyle($text-color-inverted)
     &-content
-        width: $main-content-width-xl
         @media (min-width: $screen-medium-min)
             width: $main-content-width-m
         @media (min-width: $screen-large-min)
             width: $main-content-width-l
+        @media (min-width: $screen-extra-large-min)
+            width: $main-content-width-xl
         .main-block
             padding-bottom: 17px
             @media (min-width: $screen-medium-min)
