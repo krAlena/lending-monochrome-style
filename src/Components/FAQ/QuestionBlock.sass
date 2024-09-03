@@ -6,9 +6,11 @@
     align-items: flex-start
     @include themed()
         border-bottom: 1px solid getStyle($border-color)
+    &:last-of-type
+        border-bottom: none
     .question-body
         .question-title
-            height: 28px
+            // height: 28px
             font-style: normal
             font-weight: 800
             font-size: 20px

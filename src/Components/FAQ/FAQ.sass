@@ -2,8 +2,11 @@
 @import '../../styles/mixins.sass'
 
 .faq-content
+    @media (max-width: $screen-small-max)
+        flex-direction: column-reverse
     .main-info
         width: 840px
+        max-width: 100%
         @media (min-width: $screen-medium-min)
             width: 700px
         @media (min-width: $screen-large-min)
@@ -12,9 +15,16 @@
         .top-block
             margin-bottom: 40px
             width: 554px
+            max-width: 100%
             h2
                 margin-top: 40px
                 margin-bottom: 20px
+            .illustration-part-mob
+                img
+                    height: 372px
+                    width: 360px
+                    margin-top: 40px
+                    margin-left: -16px
     .illustration-part
         @media (min-width: $screen-large-min)
             margin-right: -50px

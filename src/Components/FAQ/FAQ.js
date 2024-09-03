@@ -48,6 +48,9 @@ const FAQ = () => {
                                 asked questions, other information materials related to
                                 the financial disclosure programme.
                             </div>
+                            <div className="illustration-part-mob mob-visible">
+                                <img className="logo" src="/img/illustration/illustration_faq.svg" alt="illustration FAQ"/>
+                            </div>
                         </div>
                         <div className="questions-list">
                             {
@@ -58,7 +61,7 @@ const FAQ = () => {
 
                         </div>
                     </div>
-                    <div className="illustration-part">
+                    <div className="illustration-part mob-hidden">
                         <img className="logo" src="/img/illustration/illustration_faq.svg" alt="illustration FAQ"/>
                     </div>
                 </div>
