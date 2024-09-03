@@ -3,8 +3,18 @@
 
 .pricing-content
     .top-info
+        @media (max-width: $screen-small-max)
+            flex-direction: column-reverse
+            flex-wrap: wrap
         .illustration-part
+            @media (max-width: $screen-small-max)
+                @include flex()
+                justify-content: center
+                margin-top: 40px
             img
+                @media (max-width: $screen-small-max)
+                    height: 298px
+                    width: 280px
                 @media (min-width: $screen-medium-min)
                     height: 404px
                     width: 380px
@@ -15,6 +25,9 @@
             width: 743px
             align-items: end
             text-align: end
+            @media (max-width: $screen-small-max)
+                align-items: start
+                text-align: start
             h2
                 margin-top: 40px
                 margin-bottom: 20px
@@ -26,6 +39,13 @@
         margin-top: 60px
         gap: 102px
         justify-content: center
+        @include flex()
+        flex-direction: row
+        max-width: 100%
+        @media (max-width: $screen-small-max)
+            margin-top: 40px
+            flex-direction: column
+            gap: 24px
         @media (min-width: $screen-medium-min)
             gap: 24px
         @media (min-width: $screen-large-min)
@@ -37,6 +57,9 @@
             padding-top: 52px
             @include themed()
                 border: 1px solid getStyle($border-color)
+            @media (max-width: $screen-small-max)
+                width: 328px
+                max-width: 100%
             @media (min-width: $screen-medium-min)
                 padding-left: 20px
                 width: 304px
@@ -53,7 +76,7 @@
                 background: $dark-primary-color
                 color: $white-color
                 .description
-                    @media (min-width: $screen-medium-min)
+                    @media (max-width: $screen-medium-max)
                         width: 140px
                 div
                     color: $white-color
