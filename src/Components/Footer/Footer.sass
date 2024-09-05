@@ -10,7 +10,14 @@
     @include themed()
       background: getStyle($bg-inverted)
       color: getStyle($text-color-inverted)
+    @media (max-width: $screen-small-max)
+        height: $footer-height-mob
+        padding: 32px 20px
     &-content
+        max-width: 100%
+        @media (max-width: $screen-small-max)
+            flex-wrap: wrap
+            position: relative
         @media (min-width: $screen-medium-min)
             width: $main-content-width-m
         @media (min-width: $screen-large-min)
@@ -19,11 +26,19 @@
             width: $main-content-width-xl
         .main-block
             padding-bottom: 17px
+            max-width: 100%
             @media (min-width: $screen-medium-min)
                 width: 484px
+            .bottom-block
+                @media (max-width: $screen-small-max)
+                    position: absolute
+                    bottom: 0px
+                    width: 178px
+                    margin-left: calc(50% - 91px)
             .logo-part
                 height: 52px
             .info.big
+                max-width: 100%
                 height: 120px
                 width: 444px
                 margin-bottom: 32px
@@ -35,12 +50,22 @@
                 letter-spacing: -4px
                 @include themed()
                     color: getStyle($text-color-inverted)
+                @media (max-width: $screen-small-max)
+                    font-size: 32px
+                    line-height: 40px
+                    height: 80px
+                    margin-bottom: 20px
                 .btn-subscribe
                     position: absolute
                     right: 0px
                     border: 1px solid $white-color
                     height: 50px
                     margin-top: 1px
+                    @media (max-width: $screen-small-max)
+                        width: 123px
+                .subscribe-input
+                    @media (max-width: $screen-small-max)
+                        width: 197px
         .secondary-block
             width: 696px
             @media (min-width: $screen-medium-min)
@@ -48,19 +73,35 @@
                 position: relative
             @media (min-width: $screen-large-min)
                 width: 696px
-            .info-col
-                gap: 24px
-                &.email-block
-                    @media (min-width: $screen-medium-min)
-                        position: absolute
-                        right: 36px
-                        bottom: 132px
-                    @media (min-width: $screen-large-min)
-                        position: static
-            .email-title
-                font-weight: 700
-                font-size: 20px
-                line-height: 28px
+            .info-cols-parent
+                @media (max-width: $screen-small-max)
+                    flex-direction: column
+                    gap: 60px
+                    margin-top: -150px
+                .info-col
+                    gap: 24px
+                    @media (max-width: $screen-small-max)
+                        text-align: center
+                    &.email-block
+                        @media (max-width: $screen-small-max)
+                            position: absolute
+                            bottom: 192px
+                            text-align: center
+                            margin-left: calc(50% - 89px)
+                        @media (min-width: $screen-medium-min)
+                            position: absolute
+                            right: 36px
+                            bottom: 132px
+                        @media (min-width: $screen-large-min)
+                            position: static
+                .email-title
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 28px
             .icons-panel
                 gap: 20px
                 justify-content: end
+                @media (max-width: $screen-small-max)
+                    margin-bottom: 72px
+                    gap: 10px
+                    margin-left: -22px
