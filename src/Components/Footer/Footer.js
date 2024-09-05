@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.sass";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { ABOUT_US_ID, FAQ_ID, HOW_IT_WORKS_ID, PRICING_ID } from "../../Constants/routes";
 
 const Footer = () => {
 
@@ -35,10 +36,18 @@ const Footer = () => {
                             <div className="description white">info@the18.design</div>
                         </div>
                         <div className="info-col flex-col">
-                            <div className="description white">About us</div>
-                            <div className="description white">How it works</div>
-                            <div className="description white">Pricing</div>
-                            <div className="description white">FAQs</div>
+                            <Link to={ABOUT_US_ID} smooth={true} duration={500}>
+                                <div className="description white btn">About us</div>
+                            </Link>
+                            <Link to={HOW_IT_WORKS_ID} smooth={true} duration={500}>
+                                <div className="description white btn">How it works</div>
+                            </Link>
+                            <Link to={PRICING_ID} smooth={true} duration={500}>
+                                <div className="description white btn">Pricing</div>
+                            </Link>
+                            <Link to={FAQ_ID} smooth={true} duration={500}>
+                                <div className="description white btn">FAQs</div>
+                            </Link>
                         </div>
                         <div className="info-col flex-col">
                             <div className="description white">Lead generation</div>

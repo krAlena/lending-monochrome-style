@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {Element} from "react-scroll";
 import "./CTA.sass";
 import { CTA_ID } from "../../Constants/routes";
