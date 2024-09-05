@@ -13,15 +13,16 @@ import FAQ from './Components/FAQ/FAQ';
 
 function App() {
   const [theme, setTheme] = useState('light');
+  const [isAppScrollLocked, setIsAppScrollLocked] = useState(false);
 
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
   };
 
   return (
-    <div className={`app theme--${theme}`}>
+    <div className={!isAppScrollLocked ? `app theme--${theme}` : `app locked-scroll theme--${theme}`}>
         {/* Set up BrowserRouter for routing */}
-        <Navbar/>
+        <Navbar openMobNavbar={isOpened => setIsAppScrollLocked(isOpened)}/>
         {/* <BrowserRouter>
           <Routes>
             <Route path={CTA_PAGE} element={<CTA/>}/>
