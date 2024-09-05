@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {Element} from "react-scroll";
 import "./FAQ.sass";
 import { FAQ_ID } from "../../Constants/routes";
@@ -55,7 +55,7 @@ const FAQ = () => {
                         <div className="questions-list">
                             {
                                 Array.isArray(arrQuestions) && arrQuestions.length > 0
-                                    ?   arrQuestions.map((el,index) => <QuestionBlock isOpened={(index===0)} questionObj={el}/>)
+                                    ?   arrQuestions.map((el,index) => <QuestionBlock key={"question_" + el._id} isOpened={(index===0)} questionObj={el}/>)
                                     :   null
                             }
 

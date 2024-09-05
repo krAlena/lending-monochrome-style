@@ -26,7 +26,7 @@ const AboutUs = () => {
                     <div className="illustration-part-mob mob-visible">
                         <img className="logo" src="/img/illustration/illustration_about.svg" alt="illustration About Us"/>
                     </div>
-                    <ul class="list flex-col">
+                    <ul className="list flex-col">
                         <li>Shared Cloud Libraries, for a single source of truth</li>
                         <li>Prototype previews for user testing and research</li>
                         <li>Easy organization with projects</li>
