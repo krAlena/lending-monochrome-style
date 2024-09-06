@@ -11,7 +11,7 @@ const AboutUs = () => {
         <section className="page about-us">
             <div className="page-content about-us-content flex-row space-between">
                 <div className="illustration-part mob-hidden">
-                    <img className="logo" src="/img/illustration/illustration_about.svg" alt="illustration About Us"/>
+                    <img className="logo" src="./img/illustration/illustration_about.svg" alt="illustration About Us"/>
                 </div>
                 <div className="flex-col main-info">
                     <div className="flex-row">
@@ -24,7 +24,7 @@ const AboutUs = () => {
                         out designs in their web browser, test prototypes and leave feedback for free.
                     </div>
                     <div className="illustration-part-mob mob-visible">
-                        <img className="logo" src="/img/illustration/illustration_about.svg" alt="illustration About Us"/>
+                        <img className="logo" src="./img/illustration/illustration_about.svg" alt="illustration About Us"/>
                     </div>
                     <ul className="list flex-col">
                         <li>Shared Cloud Libraries, for a single source of truth</li>

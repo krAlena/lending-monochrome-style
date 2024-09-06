@@ -18,13 +18,13 @@ const CTA = () => {
                             <div className="button black btn-start without-margin">Get started</div>
                         </div>
                         <div className="icons-panel flex-row">
-                            <img className="logo" src="/img/cards/visa.svg" alt="logo visa"/>
-                            <img className="logo" src="/img/cards/mastercard.svg" alt="logo mastercard"/>
-                            <img className="logo" src="/img/cards/paypall.svg" alt="logo paypall"/>
+                            <img className="logo" src="./img/cards/visa.svg" alt="logo visa"/>
+                            <img className="logo" src="./img/cards/mastercard.svg" alt="logo mastercard"/>
+                            <img className="logo" src="./img/cards/paypall.svg" alt="logo paypall"/>
                         </div>
                     </div>
                     <div className="illustration-part">
-                        <img className="logo" src="/img/illustration/illustration_cta.svg" alt="illustration CTA"/>
+                        <img className="logo" src="./img/illustration/illustration_cta.svg" alt="illustration CTA"/>
                     </div>
                 </div>
             </section>
