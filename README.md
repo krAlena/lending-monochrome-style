@@ -1,7 +1,6 @@
 # Main info
 
-This site is mine implementation for portfolio of cool design https://www.figma.com/community/file/1370314670930501378/high-landing-the18-design-free (made by Oleg Poturemskiy)
-It realy inspired me to make it live.
+This project is my implementation of an inspiring [design](https://www.figma.com/community/file/1370314670930501378/high-landing-the18-design-free (made by Oleg Poturemskiy)) created by Oleg Poturemskiy, which I discovered on Figma. The design really caught my attention, and I was excited to bring it to life. The result is a fully functional, responsive website that maintains the essence of the original design while adding interactive elements to enhance the user experience. To ensure accessibility, I replaced the original font, ['Neue Machina'](https://www.typewolf.com/neue-machina), with a similar free Google font, ['Space Grotesk'](https://fonts.google.com/specimen/Space+Grotesk).
 
 ### `npm start`
 
@@ -10,16 +9,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-Font ['Neue Machina'](https://www.typewolf.com/neue-machina) was change to similar free Google font ['Space Grotesk'](https://fonts.google.com/specimen/Space+Grotesk)
