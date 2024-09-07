@@ -14,7 +14,7 @@ const Pricing = () => {
                 <div className="page-content pricing-content flex-col">
                     <div className="top-info flex-row full-width space-between">
                         <div className="illustration-part">
-                            <img className="logo" src="./img/illustration/illustration_price.png" alt="illustration Price"/>
+                            <img className="logo" src="./img/illustration/illustration_price.svg" alt="illustration Price"/>
                         </div>
                         <div className="flex-col main-info">
                             <div className="flex-row">
