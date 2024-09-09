@@ -3,7 +3,8 @@ import {Element} from "react-scroll";
 import "./Pricing.sass";
 import { PRICING_ID } from "../../Constants/routes";
 import useIsSmallScreen from "../../Helpers/useIsSmallScreen";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Pricing = () => {
     const isSmallScreen = useIsSmallScreen();
@@ -14,7 +15,12 @@ const Pricing = () => {
                 <div className="page-content pricing-content flex-col">
                     <div className="top-info flex-row full-width space-between">
                         <div className="illustration-part">
-                            <img className="logo" src="./img/illustration/illustration_price.svg" alt="illustration Price"/>
+                            <LazyLoadImage
+                                className="logo"
+                                alt="illustration price"
+                                effect="blur"
+                                src="./img/illustration/illustration_price.svg"
+                            />
                         </div>
                         <div className="flex-col main-info">
                             <div className="flex-row">

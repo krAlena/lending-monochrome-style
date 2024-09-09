@@ -3,6 +3,8 @@ import {Element} from "react-scroll";
 import "./FAQ.sass";
 import { FAQ_ID } from "../../Constants/routes";
 import QuestionBlock from "./QuestionBlock";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const FAQ = () => {
     const arrQuestions = [
@@ -49,7 +51,12 @@ const FAQ = () => {
                                 the financial disclosure programme.
                             </div>
                             <div className="illustration-part-mob mob-visible">
-                                <img className="logo" src="./img/illustration/illustration_faq.svg" alt="illustration FAQ"/>
+                                <LazyLoadImage
+                                    className="logo"
+                                    alt="illustration FAQ"
+                                    effect="blur"
+                                    src="./img/illustration/illustration_faq.svg"
+                                />
                             </div>
                         </div>
                         <div className="questions-list">
@@ -62,7 +69,12 @@ const FAQ = () => {
                         </div>
                     </div>
                     <div className="illustration-part mob-hidden">
-                        <img className="logo" src="./img/illustration/illustration_faq.svg" alt="illustration FAQ"/>
+                        <LazyLoadImage
+                            className="logo"
+                            alt="illustration FAQ"
+                            effect="blur"
+                            src="./img/illustration/illustration_faq.svg"
+                        />
                     </div>
                 </div>
             </section>

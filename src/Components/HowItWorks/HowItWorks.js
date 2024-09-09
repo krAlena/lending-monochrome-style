@@ -2,6 +2,8 @@ import React from "react";
 import {Element} from "react-scroll";
 import "./HowItWorks.sass";
 import { HOW_IT_WORKS_ID } from "../../Constants/routes";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const HowItWorks = () => {
 
@@ -15,7 +17,12 @@ const HowItWorks = () => {
                         </div>
                         <h2>Building the best space for collaboration.</h2>
                         <div className="illustration-part-mob mob-visible">
-                            <img className="logo" src="./img/illustration/illustration_works.svg" alt="illustration work"/>
+                            <LazyLoadImage
+                                className="logo"
+                                alt="illustration work"
+                                effect="blur"
+                                src="./img/illustration/illustration_works.svg"
+                            />
                         </div>
                         <div className="tools-list flex-col">
                             <div className="tool-item full-width space-between">
@@ -61,7 +68,12 @@ const HowItWorks = () => {
                         </div>
                     </div>
                     <div className="illustration-part mob-hidden">
-                        <img className="logo" src="./img/illustration/illustration_works.svg" alt="illustration work"/>
+                        <LazyLoadImage
+                            className="logo"
+                            alt="illustration work"
+                            effect="blur"
+                            src="./img/illustration/illustration_works.svg"
+                        />
                     </div>
                 </div>
             </section>

@@ -2,6 +2,8 @@ import React from "react";
 import {Element} from "react-scroll";
 import "./CTA.sass";
 import { CTA_ID } from "../../Constants/routes";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CTA = () => {
 
@@ -24,7 +26,15 @@ const CTA = () => {
                         </div>
                     </div>
                     <div className="illustration-part">
-                        <img className="logo" src="./img/illustration/illustration_cta.svg" alt="illustration CTA"/>
+                        <LazyLoadImage
+                            className="logo"
+                            alt="illustration CTA"
+                            effect="blur"
+                            // height={580}
+                            src="./img/illustration/illustration_cta.svg"
+                            // width={550}
+                        />
+                        {/* <img className="logo" src="./img/illustration/illustration_cta.svg" alt="illustration CTA"/> */}
                     </div>
                 </div>
             </section>
