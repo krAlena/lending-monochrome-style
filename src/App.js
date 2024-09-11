@@ -10,27 +10,30 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import HowItWorks from './Components/HowItWorks/HowItWorks';
 import Pricing from './Components/Pricing/Pricing';
 import FAQ from './Components/FAQ/FAQ';
+import { COLOR_THEME } from './Constants/themes';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(COLOR_THEME.light);
   const [isAppScrollLocked, setIsAppScrollLocked] = useState(false);
 
-  // const handleThemeChange = (newTheme) => {
-  //   setTheme(newTheme);
-  // };
+  const handleThemeChange = (newTheme) => {
+    console.log('handleThemeChange')
+    setTheme(newTheme);
+  };
 
   return (
     <div className={!isAppScrollLocked ? `app theme--${theme}` : `app locked-scroll theme--${theme}`}>
         {/* Set up BrowserRouter for routing */}
-        <Navbar openMobNavbar={isOpened => setIsAppScrollLocked(isOpened)}/>
+        <Navbar currentTheme={theme}
+          openMobNavbar={isOpened => setIsAppScrollLocked(isOpened)}
+          changeTheme={(newTheme) => handleThemeChange(newTheme)}
+        />
         {/* <BrowserRouter>
           <Routes>
             <Route path={CTA_PAGE} element={<CTA/>}/>
             <Route path={ABOUT_US} element={<AboutUs/>}/>
           </Routes>
         </BrowserRouter> */}
-        {/* <button onClick={() => handleThemeChange('light')}>Theme 1 (light)</button>
-        <button onClick={() => handleThemeChange('dark')}>Theme 2 (dark)</button> */}
 
         <CTA/>
         <AboutUs/>
