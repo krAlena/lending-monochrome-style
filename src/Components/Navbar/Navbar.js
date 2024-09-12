@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.sass";
 import { Link } from "react-scroll";
 import { ABOUT_US_ID, FAQ_ID,  HOW_IT_WORKS_ID, PRICING_ID } from "../../Constants/routes";
@@ -7,6 +7,10 @@ import { COLOR_THEME } from "../../Constants/themes";
 
 const Navbar = ({openMobNavbar, currentTheme, changeTheme}) => {
     const isSmallScreen = useIsSmallScreen();
+
+    useEffect(() => {
+        console.log(process.env);
+    }, []);
 
     const [isBurgerOpened, setIsBurgerOpened] = useState(false);
     const toggleBurgerMenu = (isMenuOpened) => {

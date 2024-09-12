@@ -2,8 +2,9 @@
 @import '../../styles/mixins.sass'
 
 .about-us-content
-    overflow-y: hidden
-    overflow-x: hidden
+    // // overflow-y: hidden
+    // overflow-x: hidden
+    overflow: initial
     .main-info
         width: 750px
         @media (min-width: $screen-medium-min)
@@ -19,6 +20,7 @@
             @media (min-width: $screen-medium-min)
                 width: 529px
         .illustration-part-mob
+            justify-content: center
             img
                 height: 320px
                 width: 370px
