@@ -21,12 +21,12 @@ const HowItWorks = () => {
                                 className="logo"
                                 alt="illustration work"
                                 effect="blur"
-                                src="./img/illustration/illustration_works.svg"
+                                src="img/illustration/illustration_works.svg"
                             />
                         </div>
                         <div className="tools-list flex-col">
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="./img/tools/puzzle.svg" alt="puzzle img"/>
+                                <img className="logo" src="img/tools/puzzle.svg" alt="puzzle img"/>
                                 <div className="tool-description flex-col">
                                     <h3>Shared Cloud Libraries</h3>
                                     <div className="description">
@@ -37,7 +37,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="./img/tools/structure.svg" alt="puzzle img"/>
+                                <img className="logo" src="img/tools/structure.svg" alt="puzzle img"/>
                                 <div className="tool-description flex-col">
                                     <h3>Free developer handoff, right inside</h3>
                                     <div className="description">
@@ -48,7 +48,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="./img/tools/rocket.svg" alt="puzzle img"/>
+                                <img className="logo" src="img/tools/rocket.svg" alt="puzzle img"/>
                                 <div className="tool-description flex-col">
                                     <h3>Real-time collaborative editing</h3>
                                     <div className="description">
@@ -57,7 +57,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="./img/tools/import.svg" alt="puzzle img"/>
+                                <img className="logo" src="img/tools/import.svg" alt="puzzle img"/>
                                 <div className="tool-description flex-col">
                                     <h3>Integrations with the Cloud API</h3>
                                     <div className="description">
@@ -72,7 +72,7 @@ const HowItWorks = () => {
                             className="logo"
                             alt="illustration work"
                             effect="blur"
-                            src="./img/illustration/illustration_works.svg"
+                            src="img/illustration/illustration_works.svg"
                         />
                     </div>
                 </div>

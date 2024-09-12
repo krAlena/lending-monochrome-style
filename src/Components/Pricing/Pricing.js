@@ -19,7 +19,7 @@ const Pricing = () => {
                                 className="logo"
                                 alt="illustration price"
                                 effect="blur"
-                                src="./img/illustration/illustration_price.svg"
+                                src="img/illustration/illustration_price.svg"
                             />
                         </div>
                         <div className="flex-col main-info">

@@ -55,7 +55,7 @@ const FAQ = () => {
                                     className="logo"
                                     alt="illustration FAQ"
                                     effect="blur"
-                                    src="./img/illustration/illustration_faq.svg"
+                                    src="img/illustration/illustration_faq.svg"
                                 />
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const FAQ = () => {
                             className="logo"
                             alt="illustration FAQ"
                             effect="blur"
-                            src="./img/illustration/illustration_faq.svg"
+                            src="img/illustration/illustration_faq.svg"
                         />
                     </div>
                 </div>

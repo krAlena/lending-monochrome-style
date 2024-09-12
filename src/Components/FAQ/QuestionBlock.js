@@ -14,7 +14,7 @@ const QuestionBlock = ({isOpened, questionObj}) => {
             </div>
             <img className="icon btn"
                 onClick={() => setIsVisibleAnswer(!isVisibleAnswer)}
-                src={isVisibleAnswer ? "./img/icons/minus.svg" : "./img/icons/plus.svg"}
+                src={isVisibleAnswer ? "img/icons/minus.svg" : "img/icons/plus.svg"}
                 alt={isVisibleAnswer ? "minus" : "plus"}
             />
         </div>

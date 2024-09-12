@@ -21,7 +21,7 @@ const Navbar = ({openMobNavbar, currentTheme, changeTheme}) => {
             <div className="navigation-bar-content full-width flex-row space-between">
                 <div className="tabs">
                     <div className="logo-part">
-                        <img className="logo" src="./img/logo.svg" alt="main logo"/>
+                        <img className="logo" src="img/logo.svg" alt="main logo"/>
                     </div>
                     {
                         !isSmallScreen

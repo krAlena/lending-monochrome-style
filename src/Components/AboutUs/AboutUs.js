@@ -17,7 +17,7 @@ const AboutUs = () => {
                         className="logo"
                         alt="illustration About Us"
                         effect="blur"
-                        src="./img/illustration/illustration_about.svg"
+                        src="img/illustration/illustration_about.svg"
                     />
                 </div>
                 <div className="flex-col main-info">
@@ -35,7 +35,7 @@ const AboutUs = () => {
                             className="logo"
                             alt="illustration About Us"
                             effect="blur"
-                            src="./img/illustration/illustration_about.svg"
+                            src="img/illustration/illustration_about.svg"
                         />
                     </div>
                     <ul className="list flex-col">

@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="main-block flex-col space-between">
                     <div className="top-block flex-col">
                         <div className="logo-part">
-                            <img className="logo" src="./img/logoWhite.svg" alt="main logo"/>
+                            <img className="logo" src="img/logoWhite.svg" alt="main logo"/>
 
                         </div>
                         <div className="subscribe-block">
@@ -58,11 +58,11 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="icons-panel flex-row">
-                        <img className="logo" src="./img/socialmedia/social_fb.svg" alt="facebook logo"/>
-                        <img className="logo" src="./img/socialmedia/social_tw.svg" alt="twitter logo"/>
-                        <img className="logo" src="./img/socialmedia/social_gl.svg" alt="google logo"/>
-                        <img className="logo" src="./img/socialmedia/social_in.svg" alt="linkedin logo"/>
-                        <img className="logo" src="./img/socialmedia/social_yt.svg" alt="youtube logo"/>
+                        <img className="logo" src="img/socialmedia/social_fb.svg" alt="facebook logo"/>
+                        <img className="logo" src="img/socialmedia/social_tw.svg" alt="twitter logo"/>
+                        <img className="logo" src="img/socialmedia/social_gl.svg" alt="google logo"/>
+                        <img className="logo" src="img/socialmedia/social_in.svg" alt="linkedin logo"/>
+                        <img className="logo" src="img/socialmedia/social_yt.svg" alt="youtube logo"/>
                     </div>
                 </div>
             </div>
