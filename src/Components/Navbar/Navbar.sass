@@ -62,7 +62,9 @@
         margin-left: -20px
 .navigation-bar .tab:hover::after
     background: $dark-primary-color
-
+#theme-toggle
+    height: 52px
+    margin-right: 12px
 .nav-toggle
     @include flex()
     flex-direction: column
@@ -71,12 +73,16 @@
     height: 52px
     width: 52px
     z-index: 9999
+    cursor: pointer
     .icon-parent
         height: 10px
         width: 28px
         @include flex()
         flex-direction: column
         justify-content: space-between
+        &:hover
+            .bar
+                background-color: rgba(21, 21, 21, 0.7) !important
         &.x
             height: 22px
             padding-left: 4px
