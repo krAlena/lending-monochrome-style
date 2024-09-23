@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Landing monochrome",
+  "name": "React Landing monochrome responsive App",
   "icons": [
     {
       "src": "favicon.ico",
