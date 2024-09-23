@@ -13,6 +13,7 @@ const AboutUs = () => {
         <section className="page about-us">
             <div className="page-content about-us-content flex-row space-between">
                 <div className="illustration-part mob-hidden">
+                    <div className="hightlight-spot hidden-on-light-theme"></div>
                     <LazyLoadImage
                         className="logo"
                         alt="illustration About Us"
@@ -31,6 +32,7 @@ const AboutUs = () => {
                         out designs in their web browser, test prototypes and leave feedback for free.
                     </div>
                     <div className="illustration-part-mob mob-visible">
+                        <div className="hightlight-spot hidden-on-light-theme"></div>
                         <LazyLoadImage
                             className="logo"
                             alt="illustration About Us"
