@@ -4,6 +4,10 @@ import "./HowItWorks.sass";
 import { HOW_IT_WORKS_ID } from "../../Constants/routes";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import PuzzleSvgIcon from "../Common/Icons/PuzzleSvgIcon";
+import ImportSvgIcon from "../Common/Icons/ImportSvgIcon";
+import RocketSvgIcon from "../Common/Icons/RocketSvgIcon";
+import StructureSvgIcon from "../Common/Icons/StructureSvgIcon";
 
 const HowItWorks = () => {
 
@@ -17,6 +21,7 @@ const HowItWorks = () => {
                         </div>
                         <h2>Building the best space for collaboration.</h2>
                         <div className="illustration-part-mob mob-visible">
+                            <div className="hightlight-spot hidden-on-light-theme"></div>
                             <LazyLoadImage
                                 className="logo"
                                 alt="illustration work"
@@ -26,7 +31,7 @@ const HowItWorks = () => {
                         </div>
                         <div className="tools-list flex-col">
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="img/tools/puzzle.svg" alt="puzzle img"/>
+                                <PuzzleSvgIcon className="logo icon"/>
                                 <div className="tool-description flex-col">
                                     <h3>Shared Cloud Libraries</h3>
                                     <div className="description">
@@ -37,7 +42,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="img/tools/structure.svg" alt="puzzle img"/>
+                                <StructureSvgIcon className="logo icon"/>
                                 <div className="tool-description flex-col">
                                     <h3>Free developer handoff, right inside</h3>
                                     <div className="description">
@@ -48,7 +53,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="img/tools/rocket.svg" alt="puzzle img"/>
+                                <RocketSvgIcon className="logo icon"/>
                                 <div className="tool-description flex-col">
                                     <h3>Real-time collaborative editing</h3>
                                     <div className="description">
@@ -57,7 +62,7 @@ const HowItWorks = () => {
                                 </div>
                             </div>
                             <div className="tool-item full-width space-between">
-                                <img className="logo" src="img/tools/import.svg" alt="puzzle img"/>
+                                <ImportSvgIcon className="logo icon"/>
                                 <div className="tool-description flex-col">
                                     <h3>Integrations with the Cloud API</h3>
                                     <div className="description">
@@ -68,6 +73,7 @@ const HowItWorks = () => {
                         </div>
                     </div>
                     <div className="illustration-part mob-hidden">
+                        <div className="hightlight-spot hidden-on-light-theme"></div>
                         <LazyLoadImage
                             className="logo"
                             alt="illustration work"
