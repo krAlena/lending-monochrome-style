@@ -11,8 +11,12 @@
   width: 100%
   &.theme--light
     background: $bg-color-light
+    .hidden-on-light-theme
+      display: none !important
   &.theme--dark
     background: $bg-color-night
+    .hidden-on-dark-theme
+      display: none !important
   &.locked-scroll
     overflow: hidden
     touch-action: none

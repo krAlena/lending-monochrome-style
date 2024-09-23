@@ -64,7 +64,9 @@
     background: $dark-primary-color
 #theme-toggle
     height: 52px
-    margin-right: 12px
+    margin-right: 24px
+    @media ( max-width: $screen-small-max)
+        margin-right: 24px
 .nav-toggle
     @include flex()
     flex-direction: column

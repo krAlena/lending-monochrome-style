@@ -26,11 +26,38 @@
                     width: 144px
         .icons-panel
             gap: 28px
+            position: relative
+            img.logo
+                z-index: 1000
+            .hightlight-spot
+                z-index: 0
+                border-radius: 90px
+                filter: blur(20px)
+                background-color: white
+                position: absolute
+                top: 10px
+                width: 330px
+                height: 20px
+                animation: blobani 8s infinite ease
     .illustration-part
         display: block
+        position: relative
         @media ( max-width: $screen-small-max)
             display: none
         @media (min-width: $screen-medium-min)
             margin-left: -106px
         @media (min-width: $screen-large-min)
             margin-right: -50px
+        .hightlight-spot
+            z-index: 0
+            border-radius: 100px
+            filter: blur(90px)
+            background-color: white
+            position: absolute
+            top: 0
+            left: 20%
+            right: 55%
+            bottom: 25%
+            margin: auto
+            width: 50%
+            animation: blobani 8s infinite ease

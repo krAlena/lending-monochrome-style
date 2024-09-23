@@ -20,12 +20,14 @@ const CTA = () => {
                             <div className="button black btn-start without-margin">Get started</div>
                         </div>
                         <div className="icons-panel flex-row">
+                            <div className="hightlight-spot hidden-on-light-theme"></div>
                             <img className="logo" src="img/cards/visa.svg" alt="logo visa"/>
                             <img className="logo" src="img/cards/mastercard.svg" alt="logo mastercard"/>
                             <img className="logo" src="img/cards/paypall.svg" alt="logo paypall"/>
                         </div>
                     </div>
                     <div className="illustration-part">
+                        <div className="hightlight-spot hidden-on-light-theme"></div>
                         <LazyLoadImage
                             className="logo"
                             alt="illustration CTA"
