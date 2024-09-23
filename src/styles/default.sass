@@ -87,3 +87,62 @@ span.symbol-font
     @include themed()
         background: getStyle($bg-inverted)
         color: getStyle($text-color-inverted)
+svg.icon,
+.icon
+  &.disabled
+    opacity: 0.6
+    pointer-events: none
+    > *
+      pointer-events: none
+  &.without-margin
+    margin: 0px
+  &.without-margin-left
+    margin: 0px 0px
+    margin-right: $margin-quarter-value
+  &.without-margin-right
+    margin: 0px 0px
+    margin-left: $margin-quarter-value
+  &.margin-left-zero
+    margin-left: 0px
+  
+  &.stroke-color,
+  &.stroke-fill-color
+    path
+      stroke: $icon-color !important
+      @include themed()
+        stroke: getStyle($border-color) !important
+    circle
+      stroke: $icon-color !important
+      @include themed()
+        stroke: getStyle($border-color) !important
+    rect
+      stroke: $icon-color !important
+      @include themed()
+        stroke: getStyle($border-color) !important
+    &.white
+      @include colored_stroke_icon(white)
+    &.green
+      @include colored_stroke_icon($green-meadow)
+    &.red
+      @include colored_stroke_icon($red-mint)
+    &.hover-green
+      &:hover
+        @include colored_stroke_icon($green-meadow)
+    &.hover-red
+      &:hover
+        @include colored_stroke_icon($red-mint)
+  &:not(.without-def-color):not(.stroke-color)
+    path
+      fill: $icon-color !important
+      @include themed()
+        fill: getStyle($border-color) !important
+    circle
+      fill: $icon-color !important
+      @include themed()
+        fill: getStyle($border-color) !important
+    rect
+      fill: $icon-color !important
+      @include themed()
+        fill: getStyle($border-color) !important
+    &.white
+      @include colored_icon(white)
