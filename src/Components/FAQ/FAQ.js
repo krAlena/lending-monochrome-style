@@ -51,6 +51,7 @@ const FAQ = () => {
                                 the financial disclosure programme.
                             </div>
                             <div className="illustration-part-mob mob-visible">
+                                <div className="hightlight-spot hidden-on-light-theme"></div>
                                 <LazyLoadImage
                                     className="logo"
                                     alt="illustration FAQ"
@@ -69,6 +70,7 @@ const FAQ = () => {
                         </div>
                     </div>
                     <div className="illustration-part mob-hidden">
+                        <div className="hightlight-spot hidden-on-light-theme"></div>
                         <LazyLoadImage
                             className="logo"
                             alt="illustration FAQ"

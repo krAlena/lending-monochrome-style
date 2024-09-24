@@ -20,6 +20,19 @@
                 margin-top: 40px
                 margin-bottom: 20px
             .illustration-part-mob
+                position: relative
+                .hightlight-spot
+                    z-index: 0
+                    border-radius: 100px
+                    filter: blur(90px)
+                    background-color: white
+                    position: absolute
+                    top: 0%
+                    right: 25%
+                    bottom: 25%
+                    margin: auto
+                    width: 25%
+                    animation: blobani 8s infinite ease
                 img
                     height: 372px
                     width: 360px
@@ -30,6 +43,19 @@
             margin-right: -50px
         @media (min-width: $screen-extra-large-min)
             margin-right: 0px
+        position: relative
+        .hightlight-spot
+            z-index: 0
+            border-radius: 100px
+            filter: blur(90px)
+            background-color: white
+            position: absolute
+            top: 0%
+            right: 25%
+            bottom: 25%
+            margin: auto
+            width: 25%
+            animation: blobani 8s infinite ease
         img
             @media (min-width: $screen-medium-min)
                 height: 403px

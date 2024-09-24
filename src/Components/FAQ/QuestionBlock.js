@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import "./QuestionBlock.sass";
+import PlusSvgIcon from "../Common/Icons/PlusSvgIcon";
+import MinusSvgIcon from "../Common/Icons/MinusSvgIcon";
 
 const QuestionBlock = ({isOpened, questionObj}) => {
     const [isVisibleAnswer, setIsVisibleAnswer] = useState(isOpened);
@@ -12,11 +14,11 @@ const QuestionBlock = ({isOpened, questionObj}) => {
                     {questionObj.answer}
                 </div>
             </div>
-            <img className="icon btn"
-                onClick={() => setIsVisibleAnswer(!isVisibleAnswer)}
-                src={isVisibleAnswer ? "img/icons/minus.svg" : "img/icons/plus.svg"}
-                alt={isVisibleAnswer ? "minus" : "plus"}
-            />
+            {
+                isVisibleAnswer
+                    ?   <MinusSvgIcon className="icon btn" onClick={() => setIsVisibleAnswer(!isVisibleAnswer)}/>
+                    :   <PlusSvgIcon className="icon btn" onClick={() => setIsVisibleAnswer(!isVisibleAnswer)}/>
+            }
         </div>
     );
 };
