@@ -7,6 +7,19 @@
             flex-direction: column-reverse
             flex-wrap: wrap
         .illustration-part
+            position: relative
+            .hightlight-spot
+                z-index: 0
+                border-radius: 100px
+                filter: blur(90px)
+                background-color: white
+                position: absolute
+                top: 0%
+                right: 25%
+                bottom: 25%
+                margin: auto
+                width: 25%
+                animation: blobani 8s infinite ease
             @media (max-width: $screen-small-max)
                 @include flex()
                 justify-content: center
@@ -72,17 +85,23 @@
             &.light
                 border: none
                 background: $white-color
+                div:not(.button), p
+                    color: $dark-primary-color !important
             &.dark
                 border: none
-                background: $dark-primary-color
-                color: $white-color
+                @include themed()
+                    color: getStyle($text-color-inverted)
+                    background:  getStyle($bg-inverted)
+
                 .description
                     @media (max-width: $screen-medium-max)
                         width: 140px
                 div
-                    color: $white-color
+                    @include themed()
+                        color: getStyle($text-color-inverted)
                 .button
-                    color: $dark-primary-color
+                    @include themed()
+                        color: getStyle($text-color)
             .button
                 @media (min-width: $screen-medium-min)
                     width: 224px

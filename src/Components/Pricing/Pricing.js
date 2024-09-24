@@ -15,6 +15,7 @@ const Pricing = () => {
                 <div className="page-content pricing-content flex-col">
                     <div className="top-info flex-row full-width space-between">
                         <div className="illustration-part">
+                            <div className="hightlight-spot hidden-on-light-theme"></div>
                             <LazyLoadImage
                                 className="logo"
                                 alt="illustration price"
