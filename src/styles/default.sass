@@ -146,3 +146,5 @@ svg.icon,
         fill: getStyle($border-color) !important
     &.white
       @include colored_icon(white)
+      @include themed()
+        fill: getStyle($border-color-inverted) !important

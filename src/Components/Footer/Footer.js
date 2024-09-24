@@ -2,8 +2,14 @@ import React from "react";
 import "./Footer.sass";
 import { Link } from "react-scroll";
 import { ABOUT_US_ID, FAQ_ID, HOW_IT_WORKS_ID, PRICING_ID } from "../../Constants/routes";
+import { COLOR_THEME } from "../../Constants/themes";
+import FacebookSvgIcon from "../Common/Icons/FacebookSvgIcon";
+import TwitterSvgIcon from "../Common/Icons/TwitterSvgIcon";
+import GoogleSvgIcon from "../Common/Icons/GoogleSvgIcon";
+import LinkedinSvgIcon from "../Common/Icons/LinkedinSvgIcon";
+import YoutubeSvgIcon from "../Common/Icons/YoutubeSvgIcon";
 
-const Footer = () => {
+const Footer = ({currentTheme}) => {
 
 
     return (
@@ -12,8 +18,11 @@ const Footer = () => {
                 <div className="main-block flex-col space-between">
                     <div className="top-block flex-col">
                         <div className="logo-part">
-                            <img className="logo" src="img/logoWhite.svg" alt="main logo"/>
-
+                            {
+                                currentTheme === COLOR_THEME.light
+                                    ?   <img className="logo" src="img/logoWhite.svg" alt="main logo"/>
+                                    :   <img className="logo" src="img/logo.svg" alt="main logo"/>
+                            }
                         </div>
                         <div className="subscribe-block">
                             <div className="info big">
@@ -58,11 +67,11 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="icons-panel flex-row">
-                        <img className="logo" src="img/socialmedia/social_fb.svg" alt="facebook logo"/>
-                        <img className="logo" src="img/socialmedia/social_tw.svg" alt="twitter logo"/>
-                        <img className="logo" src="img/socialmedia/social_gl.svg" alt="google logo"/>
-                        <img className="logo" src="img/socialmedia/social_in.svg" alt="linkedin logo"/>
-                        <img className="logo" src="img/socialmedia/social_yt.svg" alt="youtube logo"/>
+                        <FacebookSvgIcon className="icon logo white"/>
+                        <TwitterSvgIcon className="icon logo white"/>
+                        <GoogleSvgIcon className="icon logo white"/>
+                        <LinkedinSvgIcon className="icon logo white"/>
+                        <YoutubeSvgIcon className="icon logo white"/>
                     </div>
                 </div>
             </div>

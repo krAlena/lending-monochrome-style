@@ -40,7 +40,7 @@ function App() {
         <HowItWorks/>
         <Pricing/>
         <FAQ/>
-        <Footer/>
+        <Footer currentTheme={theme}/>
     </div>
   );
 }
